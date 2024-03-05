@@ -1,13 +1,30 @@
-<!doctype html>
+<!-- ADIT/index.html -->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Adit</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <title>AngularJS App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.js"></script>
 </head>
-<body>
+<body ng-app="ADITApp">
   <app-root></app-root>
+    <h1>First AngularJS Application</h1>
+
+    Enter Numbers to Add:
+    <input type="number" ng-model="Num1" /> + <input type="number" ng-model="Num2" /> = <span>{{Num1 + Num2}}</span> <br><br>
+
+    Enter Numbers to Subtract:
+    <input type="number" ng-model="Num3" /> - <input type="number" ng-model="Num4" /> = <span>{{Num3 - Num4}}</span> <br><br>
+
+    Enter Numbers to Multiply:
+    <input type="number" ng-model="Num5" /> x <input type="number" ng-model="Num6" /> = <span>{{Num5 * Num6}}</span> <br><br>
+
+    Enter Numbers to Divide:
+    <input type="number" ng-model="Num7" /> / <input type="number" ng-model="Num8" /> = <span>{{Num7 / Num8}}</span>
+
+    <script>
+        angular.module('ADITApp', []);
+    </script>
 </body>
 </html>
